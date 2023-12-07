@@ -1,0 +1,87 @@
+.rules .rules__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rules .rules__container.container {
+  max-width: 1420px;
+}
+.rules .rules__container .rules__title {
+  margin-right: 22px;
+  width: 50%;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -190px;
+}
+.rules .rules__container .rules__frame {
+  width: 100%;
+  border-radius: 50px;
+  padding: 167px 65px 70px;
+  border: 15px solid var(--Stroke1, #000);
+  background: url("/assets/img/yellow-bg.jpg"), lightgray 0px -143.928px/100% 143.681% no-repeat;
+  /* 1111 */
+  box-shadow: 1px 4px 4px 0px rgba(195, 195, 195, 0.25) inset, 8px 6px 7.6px 0px rgba(138, 138, 138, 0.25) inset, 0px 163px 93.4px -116px rgba(255, 230, 0, 0.47);
+}
+.rules .rules__container .frame__steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 33px;
+}
+.rules .rules__container .frame__steps .steps__step {
+  display: flex;
+  flex-direction: column;
+}
+.rules .rules__container .frame__steps .steps__step .step__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.rules .rules__container .frame__steps .steps__step .step__title .img {
+  width: 94px;
+  height: 94px;
+  box-shadow: 10px 15px 20px 0px rgba(173, 34, 3, 0.35);
+}
+.rules .rules__container .frame__steps .steps__step .step__title .text {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  color: #000;
+}
+.rules .rules__container .frame__steps .steps__step .step__description {
+  color: #000;
+  font-family: "Core Sans A", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  max-width: 601px;
+  margin-bottom: 10px;
+}
+.rules .rules__container .frame__steps .steps__step .step__description span.orange {
+  color: #ff6b00;
+}
+.rules .rules__container .frame__steps .steps__step .step__remark {
+  color: #000;
+  font-family: "Core Sans A", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 150%;
+  opacity: 0.5;
+  margin-bottom: 30px;
+}
+.rules .rules__container .frame__remark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.rules .rules__container .frame__remark .remark__text {
+  margin-left: 10px;
+  color: #e82828;
+  font-family: "Core Sans A", sans-serif;
+  font-size: 16px;
+  line-height: 120%;
+}/*# sourceMappingURL=rules.css.map */
