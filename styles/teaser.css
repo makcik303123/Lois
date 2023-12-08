@@ -14,7 +14,7 @@
 	width: 100%;
 	min-height: 100%;
 	overflow: hidden;
-	background: url("/assets/img/teaser_BG.jpg"), center center;
+	background: url("/assets/img/teaser_BG.webp"), center center;
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
