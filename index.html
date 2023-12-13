@@ -4,91 +4,165 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link
-			async
-			href="https://fonts.cdnfonts.com/css/core-sans-a"
-			rel="stylesheet"
-		/>
+		<link href="https://fonts.cdnfonts.com/css/core-sans-a" rel="stylesheet" />
 
-		<link rel="stylesheet" href="./styles/main.css" />
-		<link rel="stylesheet" href="./styles/fonts.css" />
+		<link rel="stylesheet" href="./styles/index.css" />
 		<link rel="stylesheet" href="./styles/reset.css" />
+		<link rel="stylesheet" href="./styles/header.css" />
+		<link rel="stylesheet" href="./styles/variables.css" />
+		<link rel="stylesheet" href="./styles/fonts.css" />
+		<link rel="stylesheet" href="./styles/promo.css" />
+		<link rel="stylesheet" href="./styles/rules.css" />
+		<link rel="stylesheet" href="./styles/footer.css" />
 	</head>
 	<body>
 		<div class="app">
 			<main class="main">
 				<section class="promo">
-					<div class="promo__container container">
-						<div class="promo__title">
-							<img
-								width="385"
-								height="110"
-								src="./assets/img/teaser__title.webp"
-								alt="title"
-							/>
+					<header class="header container">
+						<a target="_blank" href="https://evroopt.by/" class="wrapper__logo">
+							<img src="./assets/img/logo.webp" alt="logo" />
+						</a>
+						<div class="header__right">
+							<div class="header__menu menu">
+								<nav id="menu__body" class="menu__body">
+									<ul class="header__nav">
+										<li class="nav__item">
+											<a class="nav__link anchors" href="#">Правила акции</a>
+										</li>
+
+										<li class="nav__item">
+											<a class="nav__link anchors" href="#">Вся коллекция</a>
+										</li>
+										<li class="nav__item">
+											<a class="nav__link anchors" href="#"
+												>Создай модный лук</a
+											>
+										</li>
+										<li class="nav__item">
+											<a class="nav__link anchors" href="#">Товары-партнёры</a>
+										</li>
+										<li class="nav__item">
+											<a class="nav__link anchors" href="#">Магазины</a>
+										</li>
+										<li class="nav__item">
+											<a class="nav__link anchors" href="#">Вопрос-ответ</a>
+										</li>
+									</ul>
+								</nav>
+								<div id="wrapper__icon" class="wrapper__icon">
+									<div class="menu__icon">
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+							</div>
 						</div>
+					</header>
+					<div class="promo__container container">
 						<div class="promo__content">
 							<div class="content__left">
-								<img src="./assets/img/teaser__left.webp" alt="promo" />
+								<img src="./assets/img/promo_left.png" alt="promo_left" />
 							</div>
 							<div class="content__right">
-								<img src="./assets/img/teaser__right.webp" alt="promo" />
+								<img src="./assets/img/promo_right.webp" alt="promo_right" />
 							</div>
 						</div>
-					</div>
-					<div class="promo__sun">
-						<img src="./assets/img/sun.webp" alt="" />
 					</div>
 					<div class="promo__vector">
-						<img src="./assets/img/vector.webp" alt="promo" />
+						<img src="./assets/img/vector.webp" alt="vector" />
 					</div>
 				</section>
-				<section class="timer">
-					<div class="timer__container container">
-						<div class="timer__content">
+				<section class="rules">
+					<div class="rules__container container">
+						<div class="rules__title">
+							<img src="./assets/img/rules-title.png" alt="title" />
+						</div>
+						<div class="rules__content">
 							<div class="content__frame">
-								<div class="frame__time">
-									<div class="time__block">
-										<div data-type="дней" id="day" class="block__number">
-											00
+								<div class="frame__container">
+									<div class="frame__steps">
+										<div class="steps__step">
+											<div class="step__title">
+												<div class="step__img">
+													<img
+														class="img"
+														src="./assets/img/steps-title-1.png"
+														alt="title-1"
+													/>
+												</div>
+												<span class="text">За каждые 20 рублей в чеке</span>
+											</div>
+											<div class="step__description">
+												Покупай в магазинах «Евроопт» и «Хит!», приобретай Лойсы
+												по акционной цене 25 копеек
+												<span class="orange">за каждые 20 рублей в чеке.</span>
+												А при оплате мобильным приложением «Еплюс» получай
+												дополнительного Лойса*
+											</div>
+											<div class="step__remark">
+												*1 Лойс в чеке при следующей покупке
+											</div>
+											<div class="step__button">
+												<button class="button">Коллекция лойсов</button>
+											</div>
+										</div>
+										<div class="steps__step">
+											<div class="step__title">
+												<div class="step__img">
+													<img
+														class="img"
+														src="./assets/img/steps-title-2.png"
+														alt="title-2"
+													/>
+												</div>
+												<span class="text">За покупки товаров-партнеров</span>
+											</div>
+											<div class="step__description">
+												Покупай в магазинах «Евроопт» и «Хит!», приобретай Лойсы
+												<span class="orange">
+													по 25 копеек за покупки товаров-партнеров.
+												</span>
+												А при оплате мобильным приложением «Еплюс» получай
+												дополнительного Лойса* за 25 копеек
+											</div>
+											<div class="step__remark">
+												*1 Лойс в чеке при следующей покупке
+											</div>
+											<div class="step__button">
+												<button class="button">Товары-партнёры</button>
+											</div>
 										</div>
 									</div>
-									<div class="time__dotes">:</div>
-									<div class="time__block">
-										<div data-type="часов" id="hour" class="block__number">
-											00
+									<div class="frame__remark">
+										<div class="remark__danger">
+											<img src="/assets/icons/Danger Circle.png" alt="danger" />
 										</div>
+										<span class="remark__text"
+											>Максимальное количество Лойсов, которое можно купить по
+											акционной цене 25 копеек в одном чеке, равняется 10
+											шт.</span
+										>
 									</div>
-									<div class="time__dotes">:</div>
-									<div class="time__block">
-										<div data-type="минут" id="minute" class="block__number">
-											00
-										</div>
-									</div>
-									<div class="time__dotes">:</div>
-									<div class="time__block">
-										<div data-type="секунд" id="second" class="block__number">
-											00
-										</div>
-									</div>
-								</div>
-								<div class="frame__title">
-									<a href="/test.html"
-										><img src="/assets/img/timer_Title.webp" alt="title"
-									/></a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
+				<section class="colection"></section>
+				<section class="music"></section>
+				<section class="products"></section>
+				<section class="look"></section>
+				<section class="faq"></section>
 			</main>
 			<footer class="footer">
 				<div class="footer__wrapper">
-					<div class="footer__container">
+					<div class="footer__container container">
 						<div class="footer__content">
 							<div class="footer__frame">
-								<div class="frame__dash container">
-									<a href="https://evroopt.by/"
+								<div class="frame__dash">
+									<a href="#evroopt.by"
 										><button class="button">evroopt.by</button></a
 									>
 									<div class="frame__social">
@@ -96,40 +170,80 @@
 											href="https://www.facebook.com/Eurooptby/"
 											class="social__link"
 										>
-											<img src="/assets/icons/facebook.svg" alt="" />
+											<img
+												width="48"
+												height="48"
+												src="/assets/icons/facebook.svg"
+												alt=""
+											/>
 										</a>
 										<a
 											href="https://www.youtube.com/channel/UCYsY5ey_ufhxQVU-9jK2uMg"
 											class="social__link"
 										>
-											<img src="/assets/icons/youtube.svg" alt="" />
+											<img
+												width="48"
+												height="48"
+												src="/assets/icons/youtube.svg"
+												alt=""
+											/>
 										</a>
 										<a
 											href="https://www.instagram.com/evrooptby/"
 											class="social__link"
 										>
-											<img src="/assets/icons/instagram.svg" alt="" />
+											<img
+												width="48"
+												height="48"
+												src="/assets/icons/instagram.svg"
+												alt=""
+											/>
 										</a>
 										<a href="https://vk.com/evrooptby" class="social__link">
-											<img src="/assets/icons/vk.svg" alt="" />
+											<img
+												width="48"
+												height="48"
+												src="/assets/icons/vk.svg"
+												alt=""
+											/>
 										</a>
 										<a
 											href="https://www.tiktok.com/@evrooptby"
 											class="social__link"
 										>
-											<img src="/assets/icons/tiktok.svg" alt="" />
+											<img
+												width="48"
+												height="48"
+												src="/assets/icons/tiktok.svg"
+												alt=""
+											/>
 										</a>
 										<a href="https://ok.ru/evroopt" class="social__link">
-											<img src="/assets/icons/ok.svg" alt="" />
+											<img
+												width="48"
+												height="48"
+												src="/assets/icons/ok.svg"
+												alt=""
+											/>
 										</a>
 										<a href="https://t.me/evroopt_shop" class="social__link">
-											<img src="/assets/icons/Telegram.svg" alt="" />
+											<img
+												width="48"
+												height="48"
+												src="/assets/icons/Telegram.svg"
+												alt=""
+											/>
 										</a>
 										<a
 											href="https://invite.viber.com/?g2=AQB91Jv3F0dtL09cJg5VtC6LtnSdSGJ1yD%2FoEeQMJDH%2Bq10mC6skEmdepW2mATE%2F&lang=ru"
 											class="social__link"
 										>
-											<img src="/assets/icons/viber.svg" alt="" />
+											<img
+												width="48"
+												height="48"
+												src="/assets/icons/viber.svg"
+												alt=""
+											/>
 										</a>
 									</div>
 
@@ -143,14 +257,19 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="footer__title">
-							<img src="/assets/img/footer__title.webp" alt="title" />
+							<div class="footer__loyses-1">
+								<img src="/assets/img/loyses/footer_1.png" alt="loyses" />
+							</div>
+							<div class="footer__loyses-2">
+								<img src="/assets/img/loyses/footer_2.png" alt="loyses" />
+							</div>
+							<div class="footer__loyses-3">
+								<img src="/assets/img/loyses/footer_3.png" alt="loyses" />
+							</div>
 						</div>
 					</div>
 				</div>
 			</footer>
 		</div>
-		<script type="module" src="/js/timer.js"></script>
 	</body>
 </html>

@@ -1,0 +1,233 @@
+.rules {
+	margin-bottom: 100px;
+
+	.rules__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+
+		&.container {
+			max-width: 1420px;
+		}
+
+		.rules__title {
+			width: 50%;
+			position: relative;
+			position: absolute;
+			top: -55px;
+			z-index: 1;
+
+			@media (max-width: 1024px) {
+				width: 60%;
+			}
+			@media (max-width: 768px) {
+				width: 70%;
+			}
+			@media (max-width: 476px) {
+				width: 80%;
+				top: -45px;
+			}
+		}
+
+		.rules__content {
+			background: url("/assets/img/background/black.webp") repeat;
+			border: 15px solid transparent;
+			border-radius: 50px;
+			box-shadow: 1px 4px 4px 0px rgba(195, 195, 195, 0.25) inset,
+				8px 6px 7.6px 0px rgba(138, 138, 138, 0.25) inset,
+				0px 163px 93.4px -116px rgba(255, 230, 0, 0.47);
+
+			.content__frame {
+				width: 100%;
+				border-radius: 50px;
+				padding: 25px;
+
+				background: url("/assets/img/background/yellow.webp"),
+					lightgray 0px -143.928px / 100% 143.681% no-repeat;
+				background-size: cover;
+
+				.frame__container {
+					display: flex;
+					flex-direction: column;
+					width: 100%;
+					padding: 147px 45px 50px;
+					border-radius: 20px;
+					border-image: url("/assets/img/background/black_Dash.png") 15 / 15px
+						round;
+
+					.frame__steps {
+						display: flex;
+						justify-content: space-between;
+						gap: 50px;
+						margin-bottom: 33px;
+						height: 100%;
+
+						.steps__step {
+							display: flex;
+							flex-direction: column;
+							min-height: 100%;
+
+							.step__title {
+								display: flex;
+								align-items: center;
+								margin-bottom: 10px;
+
+								.step__img {
+									border-radius: 50%;
+									min-width: 94px;
+									min-height: 94px;
+									margin-right: 15px;
+									box-shadow: 10px 15px 20px 0px rgba(173, 34, 3, 0.35);
+
+									.img {
+										border-radius: 50%;
+										transform: rotate(4.69deg) translateX(1px) translateY(1px);
+									}
+
+									@media (max-width: 1280px) {
+										min-width: 70px;
+										min-height: 70px;
+									}
+									@media (max-width: 1024px) {
+										min-width: 48px;
+										min-height: 48px;
+										margin-right: 10px;
+									}
+									@media (max-width: 476px) {
+										min-width: 36px;
+										min-height: 36px;
+									}
+								}
+
+								.text {
+									font-size: 30px;
+									font-style: normal;
+									font-weight: 400;
+									line-height: 140%;
+									color: #000;
+
+									@media (max-width: 1024px) {
+										font-size: 24px;
+									}
+									@media (max-width: 476px) {
+										font-size: 20px;
+									}
+								}
+							}
+
+							.step__description {
+								color: #000;
+								font-family: "Core Sans A", sans-serif;
+								font-size: 20px;
+								font-style: normal;
+								font-weight: 600;
+								line-height: 140%;
+								max-width: 601px;
+								margin-bottom: 10px;
+
+								span.orange {
+									color: #ff6b00;
+								}
+
+								@media (max-width: 1024px) {
+									font-size: 16px;
+								}
+								@media (max-width: 768px) {
+									max-width: initial;
+								}
+							}
+
+							.step__remark {
+								color: #000;
+								font-family: "Core Sans A", sans-serif;
+								font-size: 16px;
+								font-style: italic;
+								font-weight: 400;
+								line-height: 150%;
+								opacity: 0.5;
+								margin-bottom: 30px;
+
+								@media (max-width: 1024px) {
+									font-size: 16px;
+								}
+								@media (max-width: 768px) {
+									font-size: 14px;
+								}
+								@media (max-width: 476px) {
+									font-size: 12px;
+								}
+							}
+
+							.step__button {
+								flex: 1;
+								display: flex;
+								align-items: end;
+
+								@media (max-width: 768px) {
+									justify-content: center;
+								}
+							}
+						}
+						@media (max-width: 1024px) {
+							gap: 40px;
+						}
+						@media (max-width: 768px) {
+							flex-direction: column;
+						}
+					}
+
+					.frame__remark {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						width: 100%;
+
+						.remark__text {
+							color: #e82828;
+							font-family: "Core Sans A", sans-serif;
+							font-size: 16px;
+							line-height: 120%;
+
+							@media (max-width: 768px) {
+								font-size: 14px;
+							}
+							@media (max-width: 476px) {
+								font-size: 12px;
+							}
+						}
+
+						.remark__danger {
+							min-width: 42px;
+							min-height: 42px;
+							margin-right: 10px;
+
+							@media (max-width: 768px) {
+								min-width: 34px;
+								min-height: 34px;
+								margin-right: 5px;
+							}
+						}
+					}
+					@media (max-width: 1024px) {
+						padding: 107px 25px 30px;
+					}
+					@media (max-width: 768px) {
+						padding: 67px 25px 30px;
+					}
+					@media (max-width: 476px) {
+						padding: 47px 15px 30px;
+					}
+				}
+
+				@media (max-width: 1024px) {
+					padding: 15px;
+				}
+			}
+
+			@media (max-width: 768px) {
+				border: 8px solid transparent;
+			}
+		}
+	}
+}

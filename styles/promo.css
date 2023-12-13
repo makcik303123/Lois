@@ -1,0 +1,31 @@
+.promo {
+  position: relative;
+  background: radial-gradient(221.1% 149.38% at 18.62% -53.13%, #0a98e3 34.25%, #10c7db 60.99%, #35e1e1 69.25%, #ecffff 82.55%, rgba(255, 255, 255, 0) 100%);
+}
+.promo .promo__container {
+  display: flex;
+}
+.promo .promo__container .promo__content {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.promo .promo__container .promo__content .content__left {
+  position: absolute;
+  top: -5%;
+  width: 50%;
+}
+.promo .promo__container .promo__content .content__right {
+  margin-left: auto;
+  width: 60%;
+}
+.promo .promo__vector {
+  right: 0;
+  top: 25%;
+  height: 50%;
+  position: absolute;
+}
+.promo .promo__vector img {
+  height: 100%;
+}/*# sourceMappingURL=promo.css.map */
