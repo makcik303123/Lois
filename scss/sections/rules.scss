@@ -11,12 +11,20 @@
 			max-width: 1420px;
 		}
 
-		.rules__title {
-			width: 50%;
+		.box__title {
+			width: 100%;
 			position: relative;
-			position: absolute;
-			top: -55px;
-			z-index: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			.title__img {
+				position: absolute;
+
+				&.rules-title {
+					box-shadow: 0px 52px 52.2px -16px rgba(100, 16, 4, 0.45);
+				}
+			}
 
 			@media (max-width: 1024px) {
 				width: 60%;
@@ -26,35 +34,18 @@
 			}
 			@media (max-width: 476px) {
 				width: 80%;
-				top: -45px;
 			}
 		}
 
 		.rules__content {
-			background: url("/assets/img/background/black.webp") repeat;
-			border: 15px solid transparent;
-			border-radius: 50px;
 			box-shadow: 1px 4px 4px 0px rgba(195, 195, 195, 0.25) inset,
 				8px 6px 7.6px 0px rgba(138, 138, 138, 0.25) inset,
 				0px 163px 93.4px -116px rgba(255, 230, 0, 0.47);
 
 			.content__frame {
-				width: 100%;
-				border-radius: 50px;
-				padding: 25px;
-
-				background: url("/assets/img/background/yellow.webp"),
-					lightgray 0px -143.928px / 100% 143.681% no-repeat;
-				background-size: cover;
-
 				.frame__container {
 					display: flex;
 					flex-direction: column;
-					width: 100%;
-					padding: 147px 45px 50px;
-					border-radius: 20px;
-					border-image: url("/assets/img/background/black_Dash.png") 15 / 15px
-						round;
 
 					.frame__steps {
 						display: flex;
@@ -125,10 +116,6 @@
 								line-height: 140%;
 								max-width: 601px;
 								margin-bottom: 10px;
-
-								span.orange {
-									color: #ff6b00;
-								}
 
 								@media (max-width: 1024px) {
 									font-size: 16px;
@@ -209,24 +196,7 @@
 							}
 						}
 					}
-					@media (max-width: 1024px) {
-						padding: 107px 25px 30px;
-					}
-					@media (max-width: 768px) {
-						padding: 67px 25px 30px;
-					}
-					@media (max-width: 476px) {
-						padding: 47px 15px 30px;
-					}
 				}
-
-				@media (max-width: 1024px) {
-					padding: 15px;
-				}
-			}
-
-			@media (max-width: 768px) {
-				border: 8px solid transparent;
 			}
 		}
 	}
