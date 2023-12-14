@@ -1,0 +1,18 @@
+.products .products__container {
+  display: flex;
+}
+.products .products__container .box-black {
+  width: 25%;
+}
+.products .products__container .box-black .box-main {
+  padding: 15px;
+}
+.products .products__container .box-black .box-main .box-dash {
+  padding: 5px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.products .products__container .box-black .box-main .box-dash .product__title {
+  font-size: 22px;
+}/*# sourceMappingURL=products.css.map */

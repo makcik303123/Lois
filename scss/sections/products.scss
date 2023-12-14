@@ -1,0 +1,27 @@
+.products {
+  .products__container {
+    display: flex;
+
+    .box-black {
+      width: 25%;
+
+      .box-main {
+        padding: 15px;
+
+        .box-dash {
+          padding: 5px;
+          height: 300px;
+          display: flex;
+          flex-direction: column;
+
+          .product__img {
+          }
+
+          .product__title {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}

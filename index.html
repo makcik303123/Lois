@@ -1,472 +1,644 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link href="https://fonts.cdnfonts.com/css/core-sans-a" rel="stylesheet" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.cdnfonts.com/css/core-sans-a" rel="stylesheet" />
 
-		<link rel="stylesheet" href="./styles/index.css" />
-		<link rel="stylesheet" href="./styles/reset.css" />
-		<link rel="stylesheet" href="./styles/header.css" />
-		<link rel="stylesheet" href="./styles/variables.css" />
-		<link rel="stylesheet" href="./styles/fonts.css" />
-		<link rel="stylesheet" href="./styles/promo.css" />
-		<link rel="stylesheet" href="./styles/rules.css" />
-		<link rel="stylesheet" href="./styles/footer.css" />
-		<link rel="stylesheet" href="./styles/music.css" />
-		<link rel="stylesheet" href="./styles/look.css" />
-		<link rel="stylesheet" href="./styles/faq.css" />
-	</head>
-	<body>
-		<div class="app">
-			<main class="main">
-				<section class="promo">
-					<header class="header container">
-						<a target="_blank" href="https://evroopt.by/" class="wrapper__logo">
-							<img src="./assets/img/logo.webp" alt="logo" />
-						</a>
-						<div class="header__right">
-							<div class="header__menu menu">
-								<nav id="menu__body" class="menu__body">
-									<ul class="header__nav">
-										<li class="nav__item">
-											<a class="nav__link anchors" href="#">Правила акции</a>
-										</li>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/promo.css" />
+    <link rel="stylesheet" href="./styles/rules.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/music.css" />
+    <link rel="stylesheet" href="./styles/look.css" />
+    <link rel="stylesheet" href="./styles/faq.css" />
+    <link rel="stylesheet" href="./styles/products.css" />
+  </head>
+  <body>
+    <div class="app">
+      <main class="main">
+        <section class="promo">
+          <header class="header container">
+            <a target="_blank" href="https://evroopt.by/" class="wrapper__logo">
+              <img src="./assets/img/logo.webp" alt="logo" />
+            </a>
+            <div class="header__right">
+              <div class="header__menu menu">
+                <nav id="menu__body" class="menu__body">
+                  <ul class="header__nav">
+                    <li class="nav__item">
+                      <a class="nav__link anchors" href="#">Правила акции</a>
+                    </li>
 
-										<li class="nav__item">
-											<a class="nav__link anchors" href="#">Вся коллекция</a>
-										</li>
-										<li class="nav__item">
-											<a class="nav__link anchors" href="#"
-												>Создай модный лук</a
-											>
-										</li>
-										<li class="nav__item">
-											<a class="nav__link anchors" href="#">Товары-партнёры</a>
-										</li>
-										<li class="nav__item">
-											<a class="nav__link anchors" href="#">Магазины</a>
-										</li>
-										<li class="nav__item">
-											<a class="nav__link anchors" href="#">Вопрос-ответ</a>
-										</li>
-									</ul>
-								</nav>
-								<div id="wrapper__icon" class="wrapper__icon">
-									<div class="menu__icon">
-										<span></span>
-										<span></span>
-										<span></span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</header>
-					<div class="promo__container container">
-						<div class="promo__content">
-							<div class="content__left">
-								<img src="./assets/img/promo_left.png" alt="promo_left" />
-							</div>
-							<div class="content__right">
-								<img src="./assets/img/promo_right.webp" alt="promo_right" />
-							</div>
-						</div>
-					</div>
-					<div class="promo__vector">
-						<img src="./assets/img/vector.webp" alt="vector" />
-					</div>
-				</section>
-				<section class="rules">
-					<div class="rules__container container">
-						<div class="box__title">
-							<div class="title__img rules-title">
-								<img src="./assets/img/rules-title.png" alt="title" />
-							</div>
-						</div>
-						<div class="rules__content box-black">
-							<div class="content__frame box-main yellow">
-								<div class="frame__container box-dash black">
-									<div class="frame__steps">
-										<div class="steps__step">
-											<div class="step__title">
-												<div class="step__img">
-													<img
-														class="img"
-														src="./assets/img/steps-title-1.png"
-														alt="title-1"
-													/>
-												</div>
-												<span class="text">За каждые 20 рублей в чеке</span>
-											</div>
-											<div class="step__description">
-												Покупай в магазинах «Евроопт» и «Хит!», приобретай Лойсы
-												по акционной цене 25 копеек
-												<span class="orange">за каждые 20 рублей в чеке.</span>
-												А при оплате мобильным приложением «Еплюс» получай
-												дополнительного Лойса*
-											</div>
-											<div class="step__remark">
-												*1 Лойс в чеке при следующей покупке
-											</div>
-											<div class="step__button">
-												<button class="button">Коллекция лойсов</button>
-											</div>
-										</div>
-										<div class="steps__step">
-											<div class="step__title">
-												<div class="step__img">
-													<img
-														class="img"
-														src="./assets/img/steps-title-2.png"
-														alt="title-2"
-													/>
-												</div>
-												<span class="text">За покупки товаров-партнеров</span>
-											</div>
-											<div class="step__description">
-												Покупай в магазинах «Евроопт» и «Хит!», приобретай Лойсы
-												<span class="orange">
-													по 25 копеек за покупки товаров-партнеров.
-												</span>
-												А при оплате мобильным приложением «Еплюс» получай
-												дополнительного Лойса* за 25 копеек
-											</div>
-											<div class="step__remark">
-												*1 Лойс в чеке при следующей покупке
-											</div>
-											<div class="step__button">
-												<button class="button">Товары-партнёры</button>
-											</div>
-										</div>
-									</div>
-									<div class="frame__remark">
-										<div class="remark__danger">
-											<img src="/assets/icons/Danger Circle.png" alt="danger" />
-										</div>
-										<span class="remark__text"
-											>Максимальное количество Лойсов, которое можно купить по
-											акционной цене 25 копеек в одном чеке, равняется 10
-											шт.</span
-										>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="colection"></section>
-				<section class="music">
-					<div class="music__container container">
-						<div class="box-black">
-							<div class="box__title">
-								<div class="title__img music-title">
-									<img src="./assets/img/music-title.png" alt="title" />
-								</div>
-							</div>
-							<div class="box-main purple">
-								<div class="music__frame box-dash white">
-									<div class="frame__block">
-										<div class="block__left">
-											<div class="left__picture">
-												<img
-													width="458"
-													height="458"
-													src="/assets/img/music__preview.png"
-													alt="prev"
-												/>
-											</div>
-										</div>
-										<div class="block__right">
-											<div class="right__music"></div>
-											<div class="right__button">
-												<button class="button">Скачать трек</button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="products"></section>
-				<section class="look">
-					<div class="look__container container">
-						<div class="box-black">
-							<div class="box-main purple">
-								<div class="music__frame box-dash white">
-									<div class="frame__block">
-										<div class="look-title">
-											<div class="title__rectangles">
-												<img
-													src="./assets/img/rectangles.png"
-													alt="rectangles"
-												/>
-											</div>
-											<div class="title__pic">
-												<img
-													class="title"
-													src="./assets/img/look-title.png"
-													alt="title"
-												/>
-											</div>
-										</div>
+                    <li class="nav__item">
+                      <a class="nav__link anchors" href="#">Вся коллекция</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link anchors" href="#"
+                        >Создай модный лук</a
+                      >
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link anchors" href="#">Товары-партнёры</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link anchors" href="#">Магазины</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link anchors" href="#">Вопрос-ответ</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div id="wrapper__icon" class="wrapper__icon">
+                  <div class="menu__icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <div class="promo__container container">
+            <div class="promo__content">
+              <div class="content__left">
+                <img src="./assets/img/promo_left.png" alt="promo_left" />
+              </div>
+              <div class="content__right">
+                <img src="./assets/img/promo_right.webp" alt="promo_right" />
+              </div>
+            </div>
+          </div>
+          <div class="promo__vector">
+            <img src="./assets/img/vector.webp" alt="vector" />
+          </div>
+        </section>
+        <section class="rules">
+          <div class="rules__container container">
+            <div class="box__title">
+              <div class="title__img rules-title">
+                <img src="./assets/img/rules-title.png" alt="title" />
+              </div>
+            </div>
+            <div class="rules__content box-black">
+              <div class="content__frame box-main yellow">
+                <div class="frame__container box-dash black">
+                  <div class="frame__steps">
+                    <div class="steps__step">
+                      <div class="step__title">
+                        <div class="step__img">
+                          <img
+                            class="img"
+                            src="./assets/img/steps-title-1.png"
+                            alt="title-1"
+                          />
+                        </div>
+                        <span class="text">За каждые 20 рублей в чеке</span>
+                      </div>
+                      <div class="step__description">
+                        Покупай в магазинах «Евроопт» и «Хит!», приобретай Лойсы
+                        по акционной цене 25 копеек
+                        <span class="orange">за каждые 20 рублей в чеке.</span>
+                        А при оплате мобильным приложением «Еплюс» получай
+                        дополнительного Лойса*
+                      </div>
+                      <div class="step__remark">
+                        *1 Лойс в чеке при следующей покупке
+                      </div>
+                      <div class="step__button">
+                        <button class="button">Коллекция лойсов</button>
+                      </div>
+                    </div>
+                    <div class="steps__step">
+                      <div class="step__title">
+                        <div class="step__img">
+                          <img
+                            class="img"
+                            src="./assets/img/steps-title-2.png"
+                            alt="title-2"
+                          />
+                        </div>
+                        <span class="text">За покупки товаров-партнеров</span>
+                      </div>
+                      <div class="step__description">
+                        Покупай в магазинах «Евроопт» и «Хит!», приобретай Лойсы
+                        <span class="orange">
+                          по 25 копеек за покупки товаров-партнеров.
+                        </span>
+                        А при оплате мобильным приложением «Еплюс» получай
+                        дополнительного Лойса* за 25 копеек
+                      </div>
+                      <div class="step__remark">
+                        *1 Лойс в чеке при следующей покупке
+                      </div>
+                      <div class="step__button">
+                        <button class="button">Товары-партнёры</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="frame__remark">
+                    <div class="remark__danger">
+                      <img src="/assets/icons/Danger Circle.png" alt="danger" />
+                    </div>
+                    <span class="remark__text"
+                      >Максимальное количество Лойсов, которое можно купить по
+                      акционной цене 25 копеек в одном чеке, равняется 10
+                      шт.</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="colection"></section>
+        <section class="music">
+          <div class="music__container container">
+            <div class="box-black">
+              <div class="box__title">
+                <div class="title__img music-title">
+                  <img src="./assets/img/music-title.png" alt="title" />
+                </div>
+              </div>
+              <div class="box-main purple">
+                <div class="music__frame box-dash white">
+                  <div class="frame__block">
+                    <div class="block__left">
+                      <div class="left__picture">
+                        <img
+                          width="458"
+                          height="458"
+                          src="/assets/img/music__preview.png"
+                          alt="prev"
+                        />
+                      </div>
+                    </div>
+                    <div class="block__right">
+                      <div class="right__music"></div>
+                      <div class="right__button">
+                        <button class="button">Скачать трек</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="products">
+          <div class="products__container container">
+            <div class="box-black">
+              <div class="box-main yellow">
+                <div class="box-dash black product">
+                  <div class="product__img"></div>
+                  <div class="product__title">
+                    Шоколад пористый "Milka" Bubbles, молочный, 76г
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="look">
+          <div class="look__container container">
+            <div class="box-black">
+              <div class="box-main purple">
+                <div class="music__frame box-dash white">
+                  <div class="frame__block">
+                    <div class="look-title">
+                      <div class="title__rectangles">
+                        <img
+                          src="./assets/img/rectangles.png"
+                          alt="rectangles"
+                        />
+                      </div>
+                      <div class="title__pic">
+                        <img
+                          class="title"
+                          src="./assets/img/look-title.png"
+                          alt="title"
+                        />
+                      </div>
+                    </div>
 
-										<div class="block__direction">
-											<div class="direction__column">
-												<div class="column__title">
-													Ты можешь наклеить «Лойсы» на свою вещь временно:
-												</div>
-												<div class="column__steps">
-													<div class="steps__title">
-														<div class="title__img">
-															<img
-																class="img"
-																width="50"
-																height="50"
-																src="/assets/img/steps-title-1.png"
-																alt=""
-															/>
-														</div>
-														<div class="title__text">Подготовка</div>
-													</div>
-													<div class="steps__description">
-														Определись с наклейкой и местом, на которое ты бы
-														хотел ее приклеить
-													</div>
-												</div>
-												<div class="column__steps">
-													<div class="steps__title">
-														<div class="title__img">
-															<img
-																class="img"
-																width="50"
-																height="50"
-																src="/assets/img/steps-title-2.png"
-																alt="steps"
-															/>
-														</div>
-														<div class="title__text">
-															Перенос наклейки на предмет
-														</div>
-													</div>
-													<ol class="steps__description">
-														<li>
-															Очисти поверхность предмета, на который ты хочешь
-															нанести наклейку, от пыли и прочих загрязнений
-														</li>
-														<li>
-															Сними защитную пленку с липкого слоя наклейки
-														</li>
-														<li>
-															Приложи наклейку липким слоем вниз в то место, на
-															которое хочешь ее наклеить. Равномерно прогладь
-															наклейку рукой в течение нескольких секунд
-														</li>
-													</ol>
-												</div>
-											</div>
-											<div class="direction__column">
-												<div class="column__title">
-													Если ты хочешь прикрепить «Лойсы» к одежде или другой
-													тканевой поверхности надолго:
-												</div>
-												<div class="column__steps">
-													<div class="steps__title">
-														<div class="title__img">
-															<img
-																class="img"
-																width="50"
-																height="50"
-																src="/assets/img/steps-title-1.png"
-																alt=""
-															/>
-														</div>
-														<div class="title__text">Подготовка</div>
-													</div>
-													<div class="steps__description">
-														Выбери наклейку и предмет одежды или другую тканевую
-														вещь, которую ты бы хотел закастомить
-													</div>
-												</div>
-												<div class="column__steps">
-													<div class="steps__title">
-														<div class="title__img">
-															<img
-																class="img"
-																width="50"
-																height="50"
-																src="/assets/img/steps-title-2.png"
-																alt="steps"
-															/>
-														</div>
-														<div class="title__text">
-															Перенос наклейки на одежду или другую тканевую
-															вещь
-														</div>
-													</div>
-													<ol class="steps__description">
-														<li>
-															Для равномерного наклеивания используй твердую
-															поверхность (гладильная доска, стол)
-														</li>
-														<li>
-															Сними защитную пленку с липкого слоя наклейки
-														</li>
-														<li>
-															Приложи наклейку на ткань липким слоем вниз в то
-															место, на которое хочешь ее наклеить.Прогладь
-															утюгом в течение 5-7 сек
-														</li>
-														<li>Дай наклейке остыть</li>
-													</ol>
-												</div>
-											</div>
-										</div>
-										<div class="steps__title">
-											<div class="title__img">
-												<img
-													class="img"
-													width="50"
-													height="50"
-													src="/assets/img/steps-title-3.png"
-													alt="steps"
-												/>
-											</div>
-											<div class="title__text">
-												Полюбуйся тем, как хорошо получилось!
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="faq">
-					<div class="faq__container container">
-						<div class="box-black">
-							<div class="box-main yellow">
-								<div class="box-dash white"></div>
-							</div>
-						</div>
-					</div>
-				</section>
-			</main>
-			<footer class="footer">
-				<div class="footer__wrapper">
-					<div class="footer__container container">
-						<div class="footer__content">
-							<div class="footer__frame">
-								<div class="frame__dash">
-									<a href="#evroopt.by"
-										><button class="button">evroopt.by</button></a
-									>
-									<div class="frame__social">
-										<a
-											href="https://www.facebook.com/Eurooptby/"
-											class="social__link"
-										>
-											<img
-												width="48"
-												height="48"
-												src="/assets/icons/facebook.svg"
-												alt=""
-											/>
-										</a>
-										<a
-											href="https://www.youtube.com/channel/UCYsY5ey_ufhxQVU-9jK2uMg"
-											class="social__link"
-										>
-											<img
-												width="48"
-												height="48"
-												src="/assets/icons/youtube.svg"
-												alt=""
-											/>
-										</a>
-										<a
-											href="https://www.instagram.com/evrooptby/"
-											class="social__link"
-										>
-											<img
-												width="48"
-												height="48"
-												src="/assets/icons/instagram.svg"
-												alt=""
-											/>
-										</a>
-										<a href="https://vk.com/evrooptby" class="social__link">
-											<img
-												width="48"
-												height="48"
-												src="/assets/icons/vk.svg"
-												alt=""
-											/>
-										</a>
-										<a
-											href="https://www.tiktok.com/@evrooptby"
-											class="social__link"
-										>
-											<img
-												width="48"
-												height="48"
-												src="/assets/icons/tiktok.svg"
-												alt=""
-											/>
-										</a>
-										<a href="https://ok.ru/evroopt" class="social__link">
-											<img
-												width="48"
-												height="48"
-												src="/assets/icons/ok.svg"
-												alt=""
-											/>
-										</a>
-										<a href="https://t.me/evroopt_shop" class="social__link">
-											<img
-												width="48"
-												height="48"
-												src="/assets/icons/Telegram.svg"
-												alt=""
-											/>
-										</a>
-										<a
-											href="https://invite.viber.com/?g2=AQB91Jv3F0dtL09cJg5VtC6LtnSdSGJ1yD%2FoEeQMJDH%2Bq10mC6skEmdepW2mATE%2F&lang=ru"
-											class="social__link"
-										>
-											<img
-												width="48"
-												height="48"
-												src="/assets/icons/viber.svg"
-												alt=""
-											/>
-										</a>
-									</div>
+                    <div class="block__direction">
+                      <div class="direction__column">
+                        <div class="column__title">
+                          Ты можешь наклеить «Лойсы» на свою вещь временно:
+                        </div>
+                        <div class="column__steps">
+                          <div class="steps__title">
+                            <div class="title__img">
+                              <img
+                                class="img"
+                                width="50"
+                                height="50"
+                                src="/assets/img/steps-title-1.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="title__text">Подготовка</div>
+                          </div>
+                          <div class="steps__description">
+                            Определись с наклейкой и местом, на которое ты бы
+                            хотел ее приклеить
+                          </div>
+                        </div>
+                        <div class="column__steps">
+                          <div class="steps__title">
+                            <div class="title__img">
+                              <img
+                                class="img"
+                                width="50"
+                                height="50"
+                                src="/assets/img/steps-title-2.png"
+                                alt="steps"
+                              />
+                            </div>
+                            <div class="title__text">
+                              Перенос наклейки на предмет
+                            </div>
+                          </div>
+                          <ol class="steps__description">
+                            <li>
+                              Очисти поверхность предмета, на который ты хочешь
+                              нанести наклейку, от пыли и прочих загрязнений
+                            </li>
+                            <li>
+                              Сними защитную пленку с липкого слоя наклейки
+                            </li>
+                            <li>
+                              Приложи наклейку липким слоем вниз в то место, на
+                              которое хочешь ее наклеить. Равномерно прогладь
+                              наклейку рукой в течение нескольких секунд
+                            </li>
+                          </ol>
+                        </div>
+                      </div>
+                      <div class="direction__column">
+                        <div class="column__title">
+                          Если ты хочешь прикрепить «Лойсы» к одежде или другой
+                          тканевой поверхности надолго:
+                        </div>
+                        <div class="column__steps">
+                          <div class="steps__title">
+                            <div class="title__img">
+                              <img
+                                class="img"
+                                width="50"
+                                height="50"
+                                src="/assets/img/steps-title-1.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="title__text">Подготовка</div>
+                          </div>
+                          <div class="steps__description">
+                            Выбери наклейку и предмет одежды или другую тканевую
+                            вещь, которую ты бы хотел закастомить
+                          </div>
+                        </div>
+                        <div class="column__steps">
+                          <div class="steps__title">
+                            <div class="title__img">
+                              <img
+                                class="img"
+                                width="50"
+                                height="50"
+                                src="/assets/img/steps-title-2.png"
+                                alt="steps"
+                              />
+                            </div>
+                            <div class="title__text">
+                              Перенос наклейки на одежду или другую тканевую
+                              вещь
+                            </div>
+                          </div>
+                          <ol class="steps__description">
+                            <li>
+                              Для равномерного наклеивания используй твердую
+                              поверхность (гладильная доска, стол)
+                            </li>
+                            <li>
+                              Сними защитную пленку с липкого слоя наклейки
+                            </li>
+                            <li>
+                              Приложи наклейку на ткань липким слоем вниз в то
+                              место, на которое хочешь ее наклеить.Прогладь
+                              утюгом в течение 5-7 сек
+                            </li>
+                            <li>Дай наклейке остыть</li>
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="steps__title">
+                      <div class="title__img">
+                        <img
+                          class="img"
+                          width="50"
+                          height="50"
+                          src="/assets/img/steps-title-3.png"
+                          alt="steps"
+                        />
+                      </div>
+                      <div class="title__text">
+                        Полюбуйся тем, как хорошо получилось!
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="faq">
+          <div class="faq__container container">
+            <div class="box-black">
+              <div class="box__title">
+                <div class="title__img faq-title">
+                  <img src="./assets/img/faq-title-1.png" alt="title" />
+                </div>
+              </div>
+              <div class="box-main yellow">
+                <div class="box-dash white">
+                  <div class="youtube"></div>
+                  <div class="block-flex">
+                    <div class="block-flex__questions">
+                      <div class="question__title">
+                        <div class="wrapper">
+                          <img src="./assets/img/faq-title-2.png" alt="tl2" />
+                        </div>
+                      </div>
+                      <div class="question__accordion">
+                        <div class="accordion-container">
+                          <div class="ac">
+                            <h2 class="ac-header">
+                              <button type="button" class="ac-trigger">
+                                <span>Где и когда проходит акция «Лойсы»?</span>
+                                <div class="ac-plus">
+                                  <span></span>
+                                  <span></span>
+                                </div>
+                              </button>
+                            </h2>
+                            <div class="ac-panel">
+                              <p class="ac-text">
+                                Все граждане Республики Беларусь, постоянно
+                                проживающие в Республике Беларусь, а также
+                                иностранные граждане и лица без гражданства,
+                                имеющие вид на жительство на территории
+                                Республики Беларусь и постоянно проживающие в
+                                Республике Беларусь.
+                              </p>
+                            </div>
+                          </div>
 
-									<div class="frame__contacts">
-										<span class="contacts__description"
-											>Остались вопросы? Свяжитесь с нами</span
-										>
-										<a class="contacts__tel" href="tel:+375447888880"
-											>+375 (44) 7-888-880</a
-										>
-									</div>
-								</div>
-							</div>
-							<div class="footer__loyses-1">
-								<img src="/assets/img/loyses/footer_1.png" alt="loyses" />
-							</div>
-							<div class="footer__loyses-2">
-								<img src="/assets/img/loyses/footer_2.png" alt="loyses" />
-							</div>
-							<div class="footer__loyses-3">
-								<img src="/assets/img/loyses/footer_3.png" alt="loyses" />
-							</div>
-						</div>
-					</div>
-				</div>
-			</footer>
-		</div>
-	</body>
+                          <div class="ac">
+                            <h2 class="ac-header">
+                              <button type="button" class="ac-trigger">
+                                <span
+                                  >Как получить возможность купить Лойса за 25
+                                  копеек?</span
+                                >
+                                <div class="ac-plus">
+                                  <span></span>
+                                  <span></span>
+                                </div>
+                              </button>
+                            </h2>
+                            <div class="ac-panel">
+                              <p class="ac-text">
+                                Покупай товары-партнеры (без необходимости
+                                предъявления карты «Еплюс») - и покупай Лойсы по
+                                акционной цене 25 копеек (без необходимости
+                                покупки на 20 рублей в чеке). Или покупай
+                                дополнительный Лойс по акционной цене 25 копеек
+                                при оплате мобильным приложением «Еплюс» при
+                                совершении покупки на 20 и более рублей (за
+                                вычетом алкоголя и табака), или покупке
+                                товаров-партнеров, или Лойса по полной стоимости
+                                (важно: 1 дополнительный Лойс в чеке при
+                                следующей покупке с применением этой же карты
+                                «Еплюс»).
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class="ac">
+                            <h2 class="ac-header">
+                              <button type="button" class="ac-trigger">
+                                <span>Сколько стоит 1 Лойс?</span>
+                                <div class="ac-plus">
+                                  <span></span>
+                                  <span></span>
+                                </div>
+                              </button>
+                            </h2>
+                            <div class="ac-panel">
+                              <p class="ac-text">
+                                Все граждане Республики Беларусь, постоянно
+                                проживающие в Республике Беларусь, а также
+                                иностранные граждане и лица без гражданства,
+                                имеющие вид на жительство на территории
+                                Республики Беларусь и постоянно проживающие в
+                                Республике Беларусь.
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class="ac">
+                            <h2 class="ac-header">
+                              <button type="button" class="ac-trigger">
+                                <span>Как купить Лойс по акционной цене?</span>
+                                <div class="ac-plus">
+                                  <span></span>
+                                  <span></span>
+                                </div>
+                              </button>
+                            </h2>
+                            <div class="ac-panel">
+                              <p class="ac-text">
+                                Все граждане Республики Беларусь, постоянно
+                                проживающие в Республике Беларусь, а также
+                                иностранные граждане и лица без гражданства,
+                                имеющие вид на жительство на территории
+                                Республики Беларусь и постоянно проживающие в
+                                Республике Беларусь.
+                              </p>
+                            </div>
+                          </div>
+
+                          <div class="ac">
+                            <h2 class="ac-header">
+                              <button type="button" class="ac-trigger">
+                                <span>Какие наклейки входят в коллекцию?</span>
+                                <div class="ac-plus">
+                                  <span></span>
+                                  <span></span>
+                                </div>
+                              </button>
+                            </h2>
+                            <div class="ac-panel">
+                              <p class="ac-text">
+                                Все граждане Республики Беларусь, постоянно
+                                проживающие в Республике Беларусь, а также
+                                иностранные граждане и лица без гражданства,
+                                имеющие вид на жительство на территории
+                                Республики Беларусь и постоянно проживающие в
+                                Республике Беларусь.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="qustion__accordion">
+                        <button class="button">
+                          Смотреть полные правила рекламной акции
+                        </button>
+                      </div>
+                    </div>
+                    <div class="block-flex__picture">
+                      <div class="picture__wrapper">
+                        <img
+                          width="793"
+                          height="1342"
+                          src="./assets/img/nastya.png"
+                          alt="nastya"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <div class="footer__container container">
+            <div class="footer__content">
+              <div class="footer__frame">
+                <div class="frame__dash">
+                  <a href="#evroopt.by"
+                    ><button class="button">evroopt.by</button></a
+                  >
+                  <div class="frame__social">
+                    <a
+                      href="https://www.facebook.com/Eurooptby/"
+                      class="social__link"
+                    >
+                      <img
+                        width="48"
+                        height="48"
+                        src="/assets/icons/facebook.svg"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      href="https://www.youtube.com/channel/UCYsY5ey_ufhxQVU-9jK2uMg"
+                      class="social__link"
+                    >
+                      <img
+                        width="48"
+                        height="48"
+                        src="/assets/icons/youtube.svg"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/evrooptby/"
+                      class="social__link"
+                    >
+                      <img
+                        width="48"
+                        height="48"
+                        src="/assets/icons/instagram.svg"
+                        alt=""
+                      />
+                    </a>
+                    <a href="https://vk.com/evrooptby" class="social__link">
+                      <img
+                        width="48"
+                        height="48"
+                        src="/assets/icons/vk.svg"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      href="https://www.tiktok.com/@evrooptby"
+                      class="social__link"
+                    >
+                      <img
+                        width="48"
+                        height="48"
+                        src="/assets/icons/tiktok.svg"
+                        alt=""
+                      />
+                    </a>
+                    <a href="https://ok.ru/evroopt" class="social__link">
+                      <img
+                        width="48"
+                        height="48"
+                        src="/assets/icons/ok.svg"
+                        alt=""
+                      />
+                    </a>
+                    <a href="https://t.me/evroopt_shop" class="social__link">
+                      <img
+                        width="48"
+                        height="48"
+                        src="/assets/icons/Telegram.svg"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      href="https://invite.viber.com/?g2=AQB91Jv3F0dtL09cJg5VtC6LtnSdSGJ1yD%2FoEeQMJDH%2Bq10mC6skEmdepW2mATE%2F&lang=ru"
+                      class="social__link"
+                    >
+                      <img
+                        width="48"
+                        height="48"
+                        src="/assets/icons/viber.svg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+
+                  <div class="frame__contacts">
+                    <span class="contacts__description"
+                      >Остались вопросы? Свяжитесь с нами</span
+                    >
+                    <a class="contacts__tel" href="tel:+375447888880"
+                      >+375 (44) 7-888-880</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="footer__loyses-1">
+                <img src="/assets/img/loyses/footer_1.png" alt="loyses" />
+              </div>
+              <div class="footer__loyses-2">
+                <img src="/assets/img/loyses/footer_2.png" alt="loyses" />
+              </div>
+              <div class="footer__loyses-3">
+                <img src="/assets/img/loyses/footer_3.png" alt="loyses" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="./js/accordion.js"></script>
+  </body>
 </html>

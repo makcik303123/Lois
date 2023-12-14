@@ -1,0 +1,152 @@
+.faq {
+  position: relative;
+}
+.faq .faq-title {
+  transform: rotate(3.7deg);
+}
+.faq .box-dash {
+  display: flex;
+  flex-direction: column;
+}
+.faq .box-dash .youtube {
+  width: 100%;
+  height: 500px;
+  background: #fff;
+  margin-bottom: 85px;
+  box-shadow: 0px 74px 70.4px -39px rgba(176, 87, 4, 0.6);
+}
+.faq .box-dash .block-flex {
+  display: flex;
+  gap: 25px;
+}
+.faq .box-dash .block-flex .block-flex__questions {
+  width: 50%;
+}
+.faq .box-dash .block-flex .block-flex__questions .question__title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.faq .box-dash .block-flex .block-flex__questions .question__title .wrapper {
+  width: 80%;
+  transform: rotate(-1.82deg);
+  margin-bottom: 44px;
+  box-shadow: 0px 52px 52.2px -16px rgba(100, 16, 4, 0.45);
+  border-radius: 50%;
+}
+.faq .box-dash .block-flex .block-flex__questions .question__accordion {
+  width: 100%;
+}
+.faq .box-dash .block-flex .block-flex__questions .question__accordion .ac {
+  min-height: 79px;
+  padding: 20px 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  background: #fff;
+  transition: all 0.3s;
+}
+.faq .box-dash .block-flex .block-flex__questions .question__accordion .ac:hover {
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.12157);
+  transform: scale(1.02);
+}
+.faq .box-dash .block-flex .block-flex__questions .question__accordion .ac.is-active {
+  transform: scale(1) !important;
+  box-shadow: none !important;
+}
+.faq .box-dash .block-flex .block-flex__questions .question__accordion .ac.is-active .ac-header .ac-trigger {
+  color: var(--white);
+}
+.faq .box-dash .block-flex .block-flex__questions .question__accordion .ac.is-active .ac-header .ac-trigger .ac-plus {
+  transform: rotate(225deg);
+}
+.faq .box-dash .block-flex .block-flex__questions .question__accordion .ac .ac-header {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.faq .box-dash .block-flex .block-flex__questions .question__accordion .ac .ac-header span {
+  font: initial;
+  color: #000;
+  font-family: "Baloo Cyrillic", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+.faq .box-dash .block-flex .block-flex__questions .question__accordion .ac .ac-header .ac-trigger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq .box-dash .block-flex .block-flex__questions .question__accordion .ac .ac-header .ac-trigger::after {
+  display: none;
+}
+.faq .box-dash .block-flex .block-flex__questions .question__accordion .ac .ac-header .ac-plus {
+  min-width: 24px;
+  height: 24px;
+  position: relative;
+  right: -32px;
+  transition: 0.3s;
+}
+.faq .box-dash .block-flex .block-flex__questions .question__accordion .ac .ac-header .ac-plus span {
+  position: absolute;
+  width: 100%;
+  height: 0.15rem;
+  top: calc(50% - 1px);
+  background-color: rgba(0, 0, 0, 0.4941176471);
+  transition: 0.3s;
+}
+.faq .box-dash .block-flex .block-flex__questions .question__accordion .ac .ac-header .ac-plus span:nth-last-child(1) {
+  transform: rotate(90deg);
+}
+.faq .box-dash .block-flex .block-flex__questions .question__accordion .ac .ac-text {
+  font: initial;
+  color: #000;
+  font-family: "Core Sans A", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  opacity: 0.5;
+}
+@media (max-width: 768px) {
+  .faq .box-dash .block-flex .block-flex__questions .question__accordion .ac {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 476px) {
+  .faq .box-dash .block-flex .block-flex__questions .question__accordion .ac {
+    padding: 10px 10px;
+  }
+}
+.faq .box-dash .block-flex .block-flex__questions .qustion__accordion .button {
+  white-space: normal;
+}
+@media (max-width: 1280px) {
+  .faq .box-dash .block-flex .block-flex__questions {
+    width: 60%;
+  }
+}
+@media (max-width: 1024px) {
+  .faq .box-dash .block-flex .block-flex__questions {
+    width: 100%;
+  }
+}
+.faq .box-dash .block-flex .block-flex__picture {
+  position: relative;
+}
+.faq .box-dash .block-flex .block-flex__picture .picture__wrapper {
+  position: absolute;
+  left: 0;
+  width: 700px;
+  bottom: -75px;
+}
+@media (max-width: 1280px) {
+  .faq .box-dash .block-flex .block-flex__picture .picture__wrapper {
+    width: 500px;
+  }
+}
+@media (max-width: 1024px) {
+  .faq .box-dash .block-flex .block-flex__picture {
+    display: none;
+  }
+}/*# sourceMappingURL=faq.css.map */
