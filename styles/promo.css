@@ -1,6 +1,7 @@
 .promo {
   position: relative;
   background: radial-gradient(221.1% 149.38% at 18.62% -53.13%, #0a98e3 34.25%, #10c7db 60.99%, #35e1e1 69.25%, #ecffff 82.55%, rgba(255, 255, 255, 0) 100%);
+  margin-bottom: -300px;
 }
 .promo .promo__container {
   display: flex;
@@ -28,4 +29,14 @@
 }
 .promo .promo__vector img {
   height: 100%;
+}
+@media (max-width: 1500px) {
+  .promo {
+    margin-bottom: -20%;
+  }
+}
+@media (max-width: 768px) {
+  .promo {
+    margin-bottom: -15%;
+  }
 }/*# sourceMappingURL=promo.css.map */

@@ -10,6 +10,10 @@
       rel="stylesheet"
       href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/header.css" />
@@ -196,15 +200,119 @@
         </section>
         <section class="products">
           <div class="products__container container">
-            <div class="box-black">
-              <div class="box-main yellow">
-                <div class="box-dash black product">
-                  <div class="product__img"></div>
-                  <div class="product__title">
-                    Шоколад пористый "Milka" Bubbles, молочный, 76г
+            <div class="products__header">
+              <div class="header__title">
+                Покупай Лойсы <span class="orange">по 25 копеек</span> за
+                товары-партнёры
+              </div>
+              <div class="header__btn">
+                <div class="swiper-button-prev">
+                  <svg
+                    width="60"
+                    height="60"
+                    viewBox="0 0 60 60"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M30 58.5203C45.7496 58.5203 58.5208 45.7522 58.5208 29.9994C58.5208 14.2498 45.7496 1.47859 30 1.47859C14.2503 1.47859 1.47913 14.2498 1.47913 29.9994C1.47913 45.7522 14.2503 58.5203 30 58.5203Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M25.5529 40.7024L36.3014 30.0001L25.5529 19.2979"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="swiper-button-next">
+                  <svg
+                    width="60"
+                    height="60"
+                    viewBox="0 0 60 60"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M30 58.5203C45.7496 58.5203 58.5208 45.7522 58.5208 29.9994C58.5208 14.2498 45.7496 1.47859 30 1.47859C14.2503 1.47859 1.47913 14.2498 1.47913 29.9994C1.47913 45.7522 14.2503 58.5203 30 58.5203Z"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M25.5529 40.7024L36.3014 30.0001L25.5529 19.2979"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="img-wrapper">
+                    <img src="./assets/img/prod.png" alt="prod" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-wrapper">
+                    <img src="./assets/img/prod.png" alt="prod" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-wrapper">
+                    <img src="./assets/img/prod.png" alt="prod" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-wrapper">
+                    <img src="./assets/img/prod.png" alt="prod" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-wrapper">
+                    <img src="./assets/img/prod.png" alt="prod" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-wrapper">
+                    <img src="./assets/img/prod.png" alt="prod" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-wrapper">
+                    <img src="./assets/img/prod.png" alt="prod" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-wrapper">
+                    <img src="./assets/img/prod.png" alt="prod" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="img-wrapper">
+                    <img src="./assets/img/prod.png" alt="prod" />
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="product__btn">
+              <button class="button">
+                Товары-партнеры в магазинах «Евроопт» и «Хит!»
+              </button>
             </div>
           </div>
         </section>
@@ -371,7 +479,17 @@
               </div>
               <div class="box-main yellow">
                 <div class="box-dash white">
-                  <div class="youtube"></div>
+                  <div class="youtube">
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src="https://www.youtube.com/embed/na3l_MkR5_w?si=-5bPmffA_bZ1Zcsx"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
                   <div class="block-flex">
                     <div class="block-flex__questions">
                       <div class="question__title">
@@ -625,7 +743,7 @@
                   </div>
                 </div>
               </div>
-              <div class="footer__loyses-1">
+              <!-- <div class="footer__loyses-1">
                 <img src="/assets/img/loyses/footer_1.png" alt="loyses" />
               </div>
               <div class="footer__loyses-2">
@@ -633,12 +751,14 @@
               </div>
               <div class="footer__loyses-3">
                 <img src="/assets/img/loyses/footer_3.png" alt="loyses" />
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
       </footer>
     </div>
     <script type="module" src="./js/accordion.js"></script>
+    <script type="module" src="./js/swiper.js"></script>
+    <script type="module" src="./js/menu.js"></script>
   </body>
 </html>

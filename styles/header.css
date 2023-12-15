@@ -53,6 +53,26 @@
 .header.container .header__right .menu .menu__body .header__nav .nav__item .nav__link:hover::after {
   width: 100%;
 }
+@media (max-width: 1350px) {
+  .header.container .header__right .menu .menu__body .header__nav .nav__item .nav__link {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .header.container .header__right .menu .menu__body .header__nav .nav__item .nav__link {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1350px) {
+  .header.container .header__right .menu .menu__body .header__nav {
+    gap: 30px;
+  }
+}
+@media (max-width: 1150px) {
+  .header.container .header__right .menu .menu__body .header__nav {
+    gap: 20px;
+  }
+}
 @media (max-width: 1024px) {
   .header.container .header__right .menu .menu__body .header__nav {
     flex-direction: column;
@@ -74,6 +94,7 @@
     border: none;
     padding-top: 70px;
     line-height: 50px;
+    background: radial-gradient(221.1% 149.38% at 18.62% -53.13%, #0a98e3 40.25%, #10c7db 80.99%, #35e1e1 100.25%);
   }
   .header.container .header__right .menu .menu__body.active {
     opacity: 1;
