@@ -9,29 +9,22 @@ function handlerToggle() {
   document.body.classList.toggle("lock");
 }
 
-// const anchors = document.querySelectorAll(".anchors");
+const anchors = document.querySelectorAll(".anchors");
 
-// for (let anchor of anchors) {
-// 	anchor.addEventListener("click", function (e) {
-// 		const isDesktop = window.innerWidth > 768;
-// 		e.preventDefault();
+for (let anchor of anchors) {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
 
-// 		menu.classList.remove("active");
-// 		burger.classList.remove("active");
-// 		document.body.classList.remove("lock");
+    menu.classList.remove("active");
+    burger.classList.remove("active");
+    document.body.classList.remove("lock");
 
-// 		const blockID = anchor.getAttribute("href").slice(1);
-// 		let block;
+    const blockID = anchor.getAttribute("href").slice(1);
+    let block = "start";
 
-// 		if (isDesktop) {
-// 			block = "center";
-// 		} else {
-// 			block = blockID === "prizes" ? "center" : "start";
-// 		}
-
-// 		document.getElementById(blockID).scrollIntoView({
-// 			behavior: "smooth",
-// 			block,
-// 		});
-// 	});
-// }
+    document.getElementById(blockID).scrollIntoView({
+      behavior: "smooth",
+      block,
+    });
+  });
+}
