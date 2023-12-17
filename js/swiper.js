@@ -62,6 +62,10 @@ const swiperLoys = new Swiper(".collection__swiper", {
       slidesPerView: 5,
       spaceBetween: 90,
     },
-    // when window width is >= 640px
+
+    onAny(eventName, ...args) {
+      console.log("Event: ", eventName);
+      console.log("Event data: ", args);
+    },
   },
 });
