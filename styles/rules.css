@@ -1,6 +1,3 @@
-.rules {
-  margin-bottom: 200px;
-}
 .rules .rules__container {
   display: flex;
   flex-direction: column;
@@ -207,10 +204,5 @@
     min-width: 34px;
     min-height: 34px;
     margin-right: 5px;
-  }
-}
-@media (max-width: 1920px) {
-  .rules {
-    margin-bottom: 10%;
   }
 }/*# sourceMappingURL=rules.css.map */

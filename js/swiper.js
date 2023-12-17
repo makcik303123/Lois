@@ -1,13 +1,9 @@
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs";
 
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".products__swiper", {
   // Optional parameters
   direction: "horizontal",
-  // loop: true,
-  //   autoplay: {
-  //     delay: 3000,
-  //     disableOnInteraction: false,
-  //   },
+
   // slidesPerView: "auto",
   loop: true,
   // If we need pagination
@@ -32,5 +28,40 @@ const swiper = new Swiper(".swiper", {
       slidesPerView: 4,
       //   spaceBetween: 40,
     },
+  },
+});
+
+const swiperLoys = new Swiper(".collection__swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  navigation: {
+    nextEl: ".swiper-btn-next",
+    prevEl: ".swiper-btn-prev",
+  },
+
+  centeredSlides: true,
+
+  slidesPerView: 1,
+  spaceBetween: 110,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    476: {
+      slidesPerView: 3,
+      spaceBetween: 70,
+    },
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 5,
+      spaceBetween: 90,
+    },
+
+    1280: {
+      slidesPerView: 5,
+      spaceBetween: 90,
+    },
+    // when window width is >= 640px
   },
 });

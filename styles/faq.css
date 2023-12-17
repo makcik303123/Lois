@@ -1,5 +1,6 @@
 .faq {
   position: relative;
+  margin-bottom: 100px;
 }
 .faq .faq-title {
   transform: rotate(3.7deg);
