@@ -62,10 +62,17 @@ const swiperLoys = new Swiper(".collection__swiper", {
       slidesPerView: 5,
       spaceBetween: 90,
     },
-
-    onAny(eventName, ...args) {
-      console.log("Event: ", eventName);
-      console.log("Event data: ", args);
-    },
   },
+});
+
+const bgName = document.getElementById("name");
+
+console.log(bgName);
+
+swiperLoys.on("slideChange", function () {
+  const activeSlide = document.querySelector(".swiper-slide-next");
+
+  bgName.setAttribute("data-name", activeSlide.getAttribute("data-name"));
+
+  console.log(activeSlide);
 });
