@@ -5,6 +5,7 @@
 }
 .promo .promo__container {
   display: flex;
+  flex-direction: column;
 }
 .promo .promo__container .promo__content {
   z-index: 1;
@@ -14,8 +15,20 @@
 }
 .promo .promo__container .promo__content .content__left {
   position: absolute;
+  text-align: center;
   top: -5%;
   width: 50%;
+}
+@media (max-width: 520px) {
+  .promo .promo__container .promo__content .content__left .button {
+    font-size: 16px;
+  }
+}
+@media (max-width: 420px) {
+  .promo .promo__container .promo__content .content__left .button {
+    padding: 18px 24px;
+    font-size: 14px;
+  }
 }
 .promo .promo__container .promo__content .content__right {
   margin-left: auto;
