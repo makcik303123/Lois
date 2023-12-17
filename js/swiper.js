@@ -70,7 +70,9 @@ const bgName = document.getElementById("name");
 console.log(bgName);
 
 swiperLoys.on("slideChange", function () {
-  const activeSlide = document.querySelector(".swiper-slide-next");
+  const activeSlide = document.querySelector(".swiper-slide-active");
+
+  console.log(activeSlide);
 
   bgName.setAttribute("data-name", activeSlide.getAttribute("data-name"));
 
