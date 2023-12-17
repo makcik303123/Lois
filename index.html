@@ -41,10 +41,7 @@
                 <nav id="menu__body" class="menu__body">
                   <ul class="header__nav">
                     <li class="nav__item">
-                      <a
-                        class="nav__link"
-                        href="./assets/docs/Правила_ Лойсы 15.11.23.pdf"
-                        target="_blank"
+                      <a class="nav__link anchors" href="#rules"
                         >Правила акции</a
                       >
                     </li>
@@ -129,7 +126,9 @@
                         *1 Лойс в чеке при следующей покупке
                       </div>
                       <div class="step__button">
-                        <button class="button">Коллекция лойсов</button>
+                        <a href="#collection" class="anchors">
+                          <button class="button">Коллекция лойсов</button>
+                        </a>
                       </div>
                     </div>
                     <div class="steps__step">
@@ -155,7 +154,9 @@
                         *1 Лойс в чеке при следующей покупке
                       </div>
                       <div class="step__button">
-                        <button class="button">Товары-партнёры</button>
+                        <a href="#products" class="anchors">
+                          <button class="button">Товары-партнёры</button>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -343,6 +344,11 @@
               </div>
               <div class="swiper__bg">
                 <img src="./assets/img/background/ellipse_bg.png" alt="el" />
+                <div data-name="" id="name" class="bg__name">
+                  <div class="wrapper">
+                    <img src="./assets/img/background/orange_BG.png" alt="or" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -384,7 +390,14 @@
                         ></audio>
                       </div>
                       <div class="right__button">
-                        <button class="button">Скачать трек</button>
+                        <a
+                          href="./assets/audio/ЛОЙСЫ от ЕВРООПТ.wav"
+                          download="./assets/audio/ЛОЙСЫ от ЕВРООПТ.wav"
+                        >
+                          <button id="downloadM" class="button">
+                            Скачать трек
+                          </button></a
+                        >
                       </div>
                     </div>
                   </div>
@@ -495,9 +508,11 @@
               </div>
             </div>
             <div class="product__btn">
-              <button class="button">
-                Товары-партнеры в магазинах «Евроопт» и «Хит!»
-              </button>
+              <a target="_blank" href="./assets/docs/ЛОЙСЫ_18.12 сайт_.pdf">
+                <button class="button">
+                  Товары-партнеры в магазинах «Евроопт» и «Хит!»
+                </button>
+              </a>
             </div>
           </div>
         </section>
@@ -668,7 +683,7 @@
                     <iframe
                       width="100%"
                       height="100%"
-                      src="https://www.youtube.com/embed/na3l_MkR5_w?si=-5bPmffA_bZ1Zcsx"
+                      src="https://www.youtube.com/watch?v=jYjSGg4BBhQ"
                       title="YouTube video player"
                       frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -795,9 +810,14 @@
                         </div>
                       </div>
                       <div class="qustion__accordion">
-                        <button class="button">
-                          Смотреть полные правила рекламной акции
-                        </button>
+                        <a
+                          href="./assets/docs/Правила_ Лойсы 15.11.23.pdf"
+                          target="_blank"
+                        >
+                          <button class="button">
+                            Смотреть полные правила рекламной акции
+                          </button>
+                        </a>
                       </div>
                     </div>
                     <div class="block-flex__picture">
@@ -935,5 +955,6 @@
     <script type="module" src="./js/accordion.js"></script>
     <script type="module" src="./js/swiper.js"></script>
     <script type="module" src="./js/menu.js"></script>
+    <script type="module" src="./js/music.js"></script>
   </body>
 </html>

@@ -141,6 +141,26 @@
         width: 100%;
         left: 0%;
       }
+
+      .bg__name {
+        position: absolute;
+        top: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        transform: rotate(-3.2deg);
+        z-index: 2;
+
+        &::after {
+          content: attr(data-name);
+          position: absolute;
+          font-size: 30px;
+        }
+
+        // .wrapper::after {
+        // }
+      }
     }
   }
 }
