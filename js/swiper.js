@@ -69,7 +69,7 @@ const bgName = document.getElementById("name");
 
 console.log(bgName);
 
-swiperLoys.on("slideChange", function () {
+swiperLoys.on("transitionEnd", function () {
   const activeSlide = document.querySelector(".swiper-slide-active");
 
   console.log(activeSlide);
