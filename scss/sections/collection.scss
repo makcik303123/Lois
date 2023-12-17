@@ -160,6 +160,10 @@
 
         // .wrapper::after {
         // }
+
+        @media (max-width: 768px) {
+          top: 85%;
+        }
       }
     }
   }

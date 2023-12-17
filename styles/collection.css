@@ -158,4 +158,9 @@
   content: attr(data-name);
   position: absolute;
   font-size: 30px;
+}
+@media (max-width: 768px) {
+  .collection .collection__content .swiper__bg .bg__name {
+    top: 85%;
+  }
 }/*# sourceMappingURL=collection.css.map */
