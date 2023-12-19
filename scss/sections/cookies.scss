@@ -1,0 +1,133 @@
+.app {
+	background: radial-gradient(
+		221.1% 149.38% at 18.62% -53.13%,
+		#0a98e3 40.25%,
+		#10c7db 80.99%,
+		#228e8e 100.25%
+	) !important;
+}
+
+.cookie-info {
+	color: rgb(238, 238, 238);
+	position: relative;
+	z-index: 2;
+	padding-top: 0;
+	margin-bottom: 40px;
+
+	&__title {
+		padding-bottom: 20px;
+		border-bottom: 2px solid rgba(238, 238, 238, 0.515);
+		margin: 40px 0;
+		text-align: center;
+		font-size: 30px;
+		line-height: 40px;
+	}
+
+	.list-browsers {
+		display: flex;
+		gap: 20px;
+		.browser {
+			width: 40px;
+			height: 40px;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			cursor: pointer;
+			transition: 0.3s;
+
+			&.edge {
+				background-image: url("/assets/icons/edge.svg");
+			}
+			&.chrome {
+				background-image: url("/assets/icons/chrome.svg");
+			}
+			&.firefox {
+				background-image: url("/assets/icons/firefox.svg");
+			}
+			&.explorer {
+				background-image: url("/assets/icons/ie.svg");
+			}
+			&.opera {
+				background-image: url("/assets/icons/opera.svg");
+			}
+			&.safari {
+				background-image: url("/assets/icons/safari.svg");
+			}
+			&:hover {
+				transform: scale(1.2);
+			}
+			a {
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+			}
+		}
+		@media (max-width: 375px) {
+			gap: initial;
+			justify-content: space-between;
+		}
+	}
+
+	a {
+		color: rgb(238, 238, 238) !important;
+	}
+	.setting__description {
+		margin: 30px 0 20px;
+		em {
+			color: #434343;
+			// font-size: 18px;
+			// font-weight: bold;
+		}
+	}
+	.setting__button {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+
+		.input__wrapper {
+			gap: 8px;
+			display: flex;
+			align-items: center;
+			font-size: 20px;
+
+			label {
+				cursor: default;
+			}
+
+			&.active-input {
+				cursor: pointer;
+
+				input {
+					cursor: pointer;
+				}
+				label {
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	.btn-success {
+		margin-top: 30px;
+		display: flex;
+		padding: 9px 25px;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		border-radius: 7px;
+		background-color: #5a5a5a;
+		color: var(--white);
+		white-space: nowrap;
+		text-transform: uppercase;
+		transform: scale(1);
+		transition: background-color 0.3s, color 0.3s, transform 0.3s;
+		margin-bottom: 30px;
+
+		&:hover {
+			background-color: #003042;
+		}
+		&.disabled {
+			background-color: #0086bb3c;
+			cursor: progress;
+		}
+	}
+}

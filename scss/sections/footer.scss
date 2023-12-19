@@ -20,18 +20,41 @@
 				background: url("/assets/img/background/purple.webp"), no-repeat;
 
 				.frame__dash {
-					flex-wrap: wrap;
-					gap: 40px;
-
 					position: relative;
 					width: 100%;
 					padding: 38px 55px 42px;
-					justify-content: space-between;
+					flex-direction: column;
 					display: flex;
 					align-items: center;
 
 					border-image: url("/assets/img/background/white_Dash.png") 15 / 15px
 						round;
+
+					.frame__header {
+						justify-content: space-between;
+						display: flex;
+						align-items: center;
+						width: 100%;
+						flex-wrap: wrap;
+						gap: 40px;
+						margin-bottom: 20px;
+					}
+
+					.frame__info {
+						text-align: start;
+						width: 100%;
+
+						.info__link {
+							color: #fff;
+							font-family: "Core Sans A", sans-serif;
+							font-size: 14px;
+							line-height: 178%;
+							text-align: start;
+
+							font-style: normal;
+							font-weight: 400;
+						}
+					}
 
 					.frame__social {
 						display: flex;

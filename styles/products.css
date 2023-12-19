@@ -8,7 +8,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
   width: 100%;
 }
 .products .products__container .products__header .header__title {
@@ -97,15 +96,87 @@
 }
 .products .products__container .swiper {
   width: 100%;
+  height: 100%;
   margin-bottom: 20px;
 }
-.products .products__container .swiper .swiper-slide {
-  width: 25%;
+.products .products__container .swiper .box-black {
+  border: 12px solid transparent;
+  border-radius: 47px;
+}
+.products .products__container .swiper .box-black .box-main {
+  padding: 10px;
 }
 @media (max-width: 768px) {
-  .products .products__container .swiper {
-    margin-bottom: 0px;
+  .products .products__container .swiper .box-black {
+    border: 8px solid transparent;
+    border-radius: 42px;
   }
+}
+.products .products__container .swiper .product__header {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-3deg);
+}
+.products .products__container .swiper .product__header::after {
+  position: absolute;
+  content: attr(data-info);
+  font-size: 24px;
+}
+@media (max-width: 1280px) {
+  .products .products__container .swiper .product__header::after {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .products .products__container .swiper .product__header::after {
+    font-size: 24px;
+  }
+}
+@media (max-width: 650px) {
+  .products .products__container .swiper .product__header::after {
+    font-size: 18px;
+  }
+}
+@media (max-width: 476px) {
+  .products .products__container .swiper .product__header::after {
+    font-size: 22px;
+  }
+}
+.products .products__container .swiper .swiper-wrapper {
+  height: initial;
+}
+.products .products__container .swiper .swiper-slide {
+  height: initial;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.products .products__container .swiper .swiper-slide .box-black {
+  height: 100%;
+}
+.products .products__container .swiper .swiper-slide .box-black .box-main {
+  height: 100%;
+}
+.products .products__container .swiper .swiper-slide .box-black .box-main .box-dash {
+  height: 100%;
+}
+.products .products__container .swiper .swiper-slide .product {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px;
+  text-align: center;
+}
+.products .products__container .swiper .swiper-slide .product .product__name {
+  margin-top: 5px;
+  padding: 0 10px;
 }
 .products .products__container .button {
   white-space: normal;

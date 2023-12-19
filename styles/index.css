@@ -78,12 +78,15 @@ span.orange {
 }
 .box-black .box-main {
   width: 100%;
-  border-radius: 50px;
+  border-radius: 35px;
   padding: 25px;
   background-size: cover;
 }
 .box-black .box-main.yellow {
   background: url("/assets/img/background/yellow.webp"), lightgray 0px -143.928px/100% 143.681% no-repeat;
+}
+.box-black .box-main.white {
+  background: url("/assets/img/background/white.webp"), lightgray 0px -143.928px/100% 143.681% no-repeat;
 }
 .box-black .box-main.purple {
   background: url("/assets/img/background/purple.webp"), lightgray 0px -143.928px/100% 143.681% no-repeat;
@@ -124,6 +127,7 @@ span.orange {
 @media (max-width: 768px) {
   .box-black {
     border: 8px solid transparent;
+    border-radius: 42px;
   }
 }
 

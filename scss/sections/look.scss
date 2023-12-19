@@ -1,5 +1,5 @@
 .look {
-	margin-top: 20%;
+	margin-top: 200px;
 
 	.frame__block {
 		display: flex;
@@ -157,5 +157,23 @@
 				gap: 20px;
 			}
 		}
+	}
+
+	@media (max-width: 1500px) {
+		margin-top: 13%;
+	}
+
+	@media (max-width: 1280px) {
+		margin-top: 10%;
+	}
+
+	@media (max-width: 768px) {
+		margin-top: 40px;
+	}
+	@media (max-width: 630px) {
+		margin-top: initial;
+	}
+	@media (max-width: 630px) {
+		margin-top: 20px;
 	}
 }

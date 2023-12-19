@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .look {
-  margin-top: 20%;
+  margin-top: 200px;
 }
 .look .frame__block {
   display: flex;
@@ -171,5 +171,30 @@
   .look .frame__block .block__direction {
     flex-direction: column;
     gap: 20px;
+  }
+}
+@media (max-width: 1500px) {
+  .look {
+    margin-top: 13%;
+  }
+}
+@media (max-width: 1280px) {
+  .look {
+    margin-top: 10%;
+  }
+}
+@media (max-width: 768px) {
+  .look {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 630px) {
+  .look {
+    margin-top: initial;
+  }
+}
+@media (max-width: 630px) {
+  .look {
+    margin-top: 20px;
   }
 }/*# sourceMappingURL=look.css.map */
