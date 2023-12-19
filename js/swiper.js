@@ -1,5 +1,22 @@
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs";
 
+const swiperPopup = new Swiper(".popup-swiper", {
+	// Optional parameters
+	direction: "horizontal",
+
+	// loop: true,
+	spaceBetween: 110,
+	navigation: {
+		nextEl: ".popup-swiper-button-next",
+		prevEl: ".popup-swiper-button-prev",
+	},
+
+	pagination: {
+		el: ".popup-swiper-pagination",
+		clickable: true,
+	},
+});
+
 const swiper = new Swiper(".products__swiper", {
 	// Optional parameters
 	direction: "horizontal",

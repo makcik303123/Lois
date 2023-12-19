@@ -164,8 +164,95 @@ span.orange {
 	}
 }
 
-// <div class="box__title">
-// 							<div class="title__img rules-title">
-// 								<img src="./assets/img/rules-title.png" alt="title" />
-// 							</div>
-// 						</div>
+.popup-rec {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.801);
+	z-index: 10;
+	right: -100%;
+	opacity: 0;
+	transition: right 0.3s, opacity 0.3s;
+
+	&.active {
+		opacity: 1;
+		right: 0;
+	}
+
+	.popup__wrapper {
+		cursor: pointer;
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		width: 60px;
+		height: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.popup__close {
+			height: 24px;
+			width: 40px;
+			position: relative;
+
+			span {
+				position: absolute;
+				top: calc(50% - 2px);
+				left: 0;
+				height: 4px;
+				width: 100%;
+				background-color: beige;
+				transition: all 0.5s ease-in-out;
+
+				&:first-child {
+					transform: rotate(45deg);
+				}
+
+				&:last-child {
+					transform: rotate(-45deg);
+				}
+
+				@media (max-width: 768px) {
+					height: 4px;
+				}
+			}
+			// @media (max-width: 768px) {
+			// 	height: 20px;
+			// 	width: 32px;
+			// }
+		}
+		@media (max-width: 768px) {
+			top: 15px;
+			right: 15px;
+		}
+	}
+
+	.popup__container {
+		max-width: 700px;
+		width: auto;
+		overflow: hidden;
+
+		.popup-swiper-pagination {
+			margin-top: 30px;
+			display: flex;
+			justify-content: center;
+
+			span {
+				height: 12px;
+				background-color: beige;
+				width: 12px;
+			}
+		}
+
+		@media (max-width: 1024px) {
+			max-width: 600px;
+		}
+
+		@media (max-width: 768px) {
+			max-width: 80%;
+		}
+	}
+}
