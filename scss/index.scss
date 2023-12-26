@@ -231,7 +231,7 @@ span.orange {
 	}
 
 	.popup__container {
-		max-width: 700px;
+		max-width: 600px;
 		width: auto;
 		overflow: hidden;
 
@@ -248,7 +248,7 @@ span.orange {
 		}
 
 		@media (max-width: 1024px) {
-			max-width: 600px;
+			max-width: 450px;
 		}
 
 		@media (max-width: 768px) {
